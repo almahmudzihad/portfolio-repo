@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
+@plugin "daisyui" {
+  exclude: rootscrollgutter;
+}
+@plugin "daisyui" {
+  exclude: checkbox, footer, typography, glass, rootcolor, rootscrollgutter;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
